@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-small.css" media="(max-width: 768px)">
+
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-p"></i>
+                    <div class="logo-text">Parikshit Sahu</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailto:sahuparikshit101@gmail.com" class="email-link">Email</a</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src=".\images\IMAGE.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I am <span class="input">AI Developer</span></h5>
+                    <h1>Parikshit Sahu</h1>
+                    <p> As a dedicated and passionate student pursuing a Master's degree in Artificial Intelligence and Data Analytics, I am committed to leveraging my academic background and practical experience to contribute to the field of AI development. 
+                        My journey in AI and data science has been enriched through hands-on internships and comprehensive coursework, including deep learning and statistics for data science and machine learning. During this time, I have developed a diverse portfolio of projects, showcasing my ability to design and implement advanced machine learning and deep learning models.
+                        Some of my notable projects include:
+                        Credit Card Fraud Detection System, Face Detection System, Facial Recognition-Based Attendance System,
+                        Handwriting Detection System, Movie and Music Recommendation System, Handwritten Equation Solver Using CNN, Facial Recognition to Detect Mood and Suggest Songs, Next Word Prediction Using Stacked LSTM.
+                        My career goal is to become a proficient AI developer, where I can apply my skills and knowledge to create innovative AI solutions that drive efficiency and enhance user experiences. I am eager to connect with professionals and organizations in the AI and data science community to collaborate and learn from industry leaders
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download Resume</a>
+                       <!-- <a href="mailto:sahuparikshit101@gmail.com" class="email-link btn active">sahuparikshit101@gmail.com</a> -->
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/parikshitsahu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                          
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Parikshit-1234" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                        
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <div class="projects-container">
+        <h1>My GitHub Projects</h1>
+    
+        <!-- Replace with your actual project URLs and images -->
+        <a href="https://github.com/Parikshit-1234/Face_Detection_attendance_system" target="_blank" class="project-link">
+          <img src=".\images\FD.jpg" alt="Face_Detection_attendance_system" >
+        </a>
+    
+        <a href="https://github.com/Parikshit-1234/Credit_Card_Fraud_Detection" target="_blank" class="project-link">
+          <img src="images\CC.jpg" alt="CC Fraud Detection">
+        </a>
+    
+        <a href="https://github.com/Parikshit-1234/Movie_recommender_system" target="_blank" class="project-link">
+          <img src="images\MR.jpg" alt="Movie_recommender_system">
+        </a>
+        
+        <a href="https://github.com/Parikshit-1234/LGM-DataScience-Task-number-9" target="_blank" class="project-link">
+            <img src=".\images\HES.png" alt="Handwritten Eq Solver" >
+          </a>
+          <a href="https://github.com/Parikshit-1234/Stock_Prediction_Model" target="_blank" class="project-link">
+            <img src="images\SP.jpg" alt="Stock_Prediction_Mode">
+          </a>
+
+          <a href="https://github.com/Parikshit-1234/CPP-PROJECTS/blob/main/Hotel_management.cpp" target="_blank" class="project-link">
+            <img src="images\HM.jpg" alt="Hotel_management_system">
+          </a>
+
+
+      </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["AI Developer","Deep learning engineer","ML Engineer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>

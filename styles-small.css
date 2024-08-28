@@ -1,0 +1,127 @@
+/* styles-small.css */
+
+/* General Reset for Smaller Screens */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+}
+
+/* Make sure body is scrollable */
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Adjust Header Styles for Small Screens */
+header {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .logo {
+    margin-bottom: 10px;
+}
+
+nav .togglebtn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+nav .navlinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: #222;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav .navlinks.open {
+    right: 0;
+}
+
+nav .navlinks li {
+    margin: 15px 0;
+}
+
+nav .navlinks li a {
+    font-size: 1.2rem;
+}
+
+/* Adjust Hero Section for Small Screens */
+.hero-header {
+    min-height: 75vh;
+}
+
+.container {
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.container .hero-pic {
+    width: 250px;
+    height: 250px;
+}
+
+.hero-text {
+    max-width: 90%;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text h5 {
+    font-size: 12px;
+}
+
+.btn-group {
+    margin: 30px 0;
+}
+
+.btn-group .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust Project Links for Small Screens */
+.projects-container {
+    padding: 20px;
+}
+
+.project-link {
+    display: block;
+    margin: 20px auto;
+}
+
+.project-link img {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
